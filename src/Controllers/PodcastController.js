@@ -65,7 +65,7 @@ export default {
 
         const id = req.params.id
 
-        const new_podcasts = delete_meme(id)
+        const new_memes = delete_meme(id)
 
         res.status(200).json(new_memes)
     }
