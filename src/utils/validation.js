@@ -45,7 +45,7 @@ export default {
         check('hosts.*.id').isInt(),
         check('hosts.*.name').isString().trim().customSanitizer(value => capitalize(value)).isAlpha("en-US", {
             "ignore": [" ", "-", "'"]
-        }).trim()
+        }).trim(),
         param('id').isString().trim()
     ],
     delete_meme: [
