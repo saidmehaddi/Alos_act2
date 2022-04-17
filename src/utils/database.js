@@ -50,7 +50,7 @@ export function update_meme(id, data) {
     return memes
 }
 export function delete_meme(id) {
-    let index = podcasts.findIndex(meme => meme.id == id)
+    let index = memes.findIndex(meme => meme.id == id)
 
     memes.splice(index, 1)
     delete_hosts(id)
